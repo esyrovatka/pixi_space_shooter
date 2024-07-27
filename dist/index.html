@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PixiJS Game</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100dvh;
+        width: 100dvw;
+        overflow: hidden;
+        background-color: white;
+      }
+
+      #level {
+        font-size: 36px;
+        line-height: 42px;
+        font-weight: 700;
+        color: #000;
+        margin-bottom: 10px;
+      }
+      #container {
+        position: relative;
+        width: 1280px;
+        height: 720px;
+      }
+      canvas {
+        display: block;
+      }
+      #bulletCount,
+      #destroyedMeteorsCount,
+      #boss {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: white;
+        font-size: 20px;
+        font-family: Arial, sans-serif;
+      }
+      #destroyedMeteorsCount,
+      #boss {
+        top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="level">Level 1</div>
+
+    <div id="container">
+      <canvas></canvas>
+      <div id="bulletCount">Bullets: 0 / 10</div>
+      <div id="destroyedMeteorsCount">Destroyed Meteors: 0 / 4</div>
+      <div id="boss"></div>
+    </div>
+    <script src="bundle.js"></script>
+  </body>
+</html>
